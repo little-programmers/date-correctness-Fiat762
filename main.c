@@ -16,7 +16,7 @@ bool date_correctness(int day, int month, int year) {
 			}
 			break;
 
-		case 2: if (year % 4 == 0 && year % 100 != 0 || (year%400==0)) {
+		case 2: if ((year % 4 == 0 && year % 100 != 0) || (year%400==0)) {
 			if (day > 0 && day <= 29) { return true; }
 			else
 			{
